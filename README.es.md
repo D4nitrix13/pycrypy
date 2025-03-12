@@ -1,6 +1,6 @@
 <!-- Autor: Daniel Benjamin Perez Morales -->
-<!-- GitHub: https://github.com/DanielBenjaminPerezMoralesDev13 -->
-<!-- Gitlab: https://gitlab.com/DanielBenjaminPerezMoralesDev13 -->
+<!-- GitHub: https://github.com/D4nitrix13 -->
+<!-- Gitlab: https://gitlab.com/D4nitrix13 -->
 <!-- Correo electrónico: danielperezdev@proton.me -->
 
 <!-- PYTHONPATH=src python3 src/cli/main.py --help -->
@@ -32,7 +32,7 @@ pip install pycrypy
 1. **Clonar el Repositorio:**
 
    ```bash
-   git clone https://github.com/DanielBenjaminPerezMoralesDev13/pycrypy.git --depth=1
+   git clone https://github.com/D4nitrix13/pycrypy.git --depth=1
    ```
 
 2. **Navegar al Directorio del Proyecto:**
@@ -349,6 +349,6 @@ pyinstaller --onefile \
 
 - **Autor:** *Daniel Benjamin Perez Morales*
 
-- **GitHub:** *[DanielBenjaminPerezMoralesDev13](https://github.com/DanielBenjaminPerezMoralesDev13 "https://github.com/DanielBenjaminPerezMoralesDev13")*
+- **GitHub:** *[D4nitrix13](https://github.com/D4nitrix13 "https://github.com/D4nitrix13")*
 
 - **Correo electrónico:** *`danielperezdev@proton.me`*

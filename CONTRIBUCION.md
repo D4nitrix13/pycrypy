@@ -1,6 +1,6 @@
 <!-- Author: Daniel Benjamin Perez Morales -->
-<!-- GitHub: https://github.com/DanielBenjaminPerezMoralesDev13 -->
-<!-- Gitlab: https://gitlab.com/DanielBenjaminPerezMoralesDev13 -->
+<!-- GitHub: https://github.com/D4nitrix13 -->
+<!-- Gitlab: https://gitlab.com/D4nitrix13 -->
 <!-- Email: danielperezdev@proton.me -->
 
 # ***Contribuyendo a pycrypy***
@@ -34,5 +34,5 @@
 
 * *¿No tienes tiempo para contribuir? No te preocupes, aquí hay otras maneras de mostrar tu apoyo a pycrypy:*
 
-* **⭐ Marca con una estrella el [proyecto](https://github.com/DanielBenjaminPerezMoralesDev13/pycrypy.git "https://github.com/DanielBenjaminPerezMoralesDev13/pycrypy.git")**
+* **⭐ Marca con una estrella el [proyecto](https://github.com/D4nitrix13/pycrypy.git "https://github.com/D4nitrix13/pycrypy.git")**
 * **🐦 Tuitea tu apoyo a pycrypy**

@@ -1,6 +1,6 @@
 # Author: Daniel Benjamin Perez Morales
-# GitHub: https://github.com/DanielBenjaminPerezMoralesDev13
-# Gitlab: https://gitlab.com/DanielBenjaminPerezMoralesDev13
+# GitHub: https://github.com/D4nitrix13
+# Gitlab: https://gitlab.com/D4nitrix13
 # Email: danielperezdev@proton.me
 
 
@@ -287,7 +287,7 @@ class Cli():
         ### "Esta función devuelve la información del autor y la versión de pycrypy."
         """
         autor: str = bold(t = "Autor: ", c = "cyan") + italic(t = 'Daniel Benjamin Perez Morales\n', c = 'verde')
-        gitHub: str = bold(t = "GitHub: ", c = "cyan") + italic(t = 'https://github.com/DanielBenjaminPerezMoralesDev13\n', c = 'verde')
+        gitHub: str = bold(t = "GitHub: ", c = "cyan") + italic(t = 'https://github.com/D4nitrix13\n', c = 'verde')
         email: str = bold(t = "Email: ", c = "cyan") + italic(t = 'danielperezdev@proton.me\n', c = 'verde')
         version: str = bold(t = "pycrypy Version: ", c = "cyan") + italic(t = f"`v{self.__version__}`\n", c = 'verde')
         return autor + gitHub + email + version
