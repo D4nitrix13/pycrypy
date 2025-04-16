@@ -5,12 +5,11 @@
 
 
 import os
-import sys
 from argparse import ArgumentParser, Namespace
 from pathlib import Path
-from sys import argv, stderr, stdout
+from sys import argv, stderr, stdout, path, exit
 
-sys.path.append(os.path.abspath(path=os.path.join(os.path.dirname(p=__file__), "..")))
+path.append(os.path.abspath(path=os.path.join(os.path.dirname(p=__file__), "..")))
 
 from typing import List, NoReturn, Optional, Type, Union
 
@@ -288,7 +287,7 @@ class Cli:
         # checkeamos que al menos haya un argumento
         if len(argv) == 1:
             self.parser.print_help(file=stderr)
-            exit(code=1)
+            exit(1)
         return None
 
     @property
@@ -584,7 +583,7 @@ class Cli:
                 end="\n",
                 file=stderr,
             )
-        exit(code=1)
+        exit(1)
 
     async def validation_flags_padding(self: "Cli") -> None:
         """
@@ -748,22 +747,22 @@ class Cli:
         # Validamos si se proporciono un valor para la flag `t`
         if isinstance(args.theme, list) and len(args.theme) == 0:
             await self.validation_flags_theme(flag="t")
-            exit(code=1)
+            exit(1)
 
         # Validamos si se proporciono un valor para la flag `P`
         if args.theme_path is None:
             await self.validation_flags_theme(flag="P")
-            exit(code=1)
+            exit(1)
 
         # Verificamos si no se proporciono ningun valor para la flag `-f`
         if args.font is not None and not args.font:
             await self.validation_flags_font()
-            exit(code=1)
+            exit(1)
 
         # Validamos si el valor proporcionado en la flag `-F` es de tipo float
         if args.fontSize is None:
             await self.validation_flags_font_size()
-            exit(code=1)
+            exit(1)
 
         # Verificamos si no se proporciono ningun valor para la flag `-F`
         if args.fontSize is not None:
@@ -774,12 +773,12 @@ class Cli:
         # Verificamos si no se proporciono ningun valor para la flag `-s`
         if args.style is not None and not args.style:
             await self.validation_flags_font_style()
-            exit(code=1)
+            exit(1)
 
         # Verificamos si no se proporciono ningun valor para la flag `-o`
         if args.opacity is not None and not args.opacity:
             await self.validation_flags_opacity()
-            exit(code=1)
+            exit(1)
 
         # Mapeamos a float y verficamos que el valor proporcionado es valido
         if args.opacity:
@@ -790,7 +789,7 @@ class Cli:
         # Verificamos si la el valor de la flag `-p` son de tipo int y tiene 2 valore x e y
         if args.padding is not None and len(args.padding) != 2:
             await self.validation_flags_padding()
-            exit(code=1)
+            exit(1)
 
         if args.padding is not None and len(args.padding) == 2:
             s: int
@@ -814,7 +813,7 @@ class Cli:
             and args.cursorShape.title() not in ["Block", "Underline", "Beam"]
         ):
             await self.validation_flags_cursor_shape()
-            exit(code=1)
+            exit(1)
 
         # La primera condición verifica si la flag fue proporcionada por el usuario pero no se proporcionó ningún valor.
         # La segunda condición verifica que `args.cursorShape` no es una instancia de la clase bool,
@@ -827,12 +826,12 @@ class Cli:
             and args.cursor_blinking.title() not in ["Never", "Off", "On", "Always"]
         ):
             await self.validation_flags_cursor_blinking()
-            exit(code=1)
+            exit(1)
 
         # Validamos si no se proporciono ningun valor al flag `-T`
         if args.cursor_thickness is None:
             await self.validation_flags_cursor_thickness()
-            exit(code=1)
+            exit(1)
 
         # Validamos que el valor de la flag `-T` se pueda parsear a float
         if not isinstance(args.cursor_thickness, bool):
